@@ -1,1 +1,128 @@
-testing
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bootish by Gabriel Genois</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span>-->
+						<h1>Bootish</h1>
+						<p>Just another ReCAPTCHA<br />
+						built by <a href="https://twitter.com/GabrielGenois">@GabrielGenois</a>.</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Installation</a></li>
+							<li><a href="#first">Documentations</a></li>
+							<li><a href="#second">Project</a></li>
+							<li><a href="#cta">Contact me</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content" style="max-width:600px;">
+										<header class="major">
+											<h2>Installation</h2>
+										</header>
+										<p class="content">Simply add this to a form:</p>
+<pre><code class="html">&lt;!-- bootish --&gt;
+&lt;div id="bootish-container"&gt;Loading...&lt;/div&gt;
+&lt;script src="//bootish.genois.tk/l.js"&gt;&lt;/script&gt;
+&lt;!-- bootish / --&gt;</code></pre>
+									</div>
+									
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main ">
+								<header class="major">
+									<h2>Documentations</h2>
+								</header>
+								<p class="content">Right now the code isn't open for safety reason. But it will.</p>
+								<h4>Initialisation</h4>
+								<ul>
+									<li>Remove the form Action</li>
+									<li>Add the attribute "disabled" to every "submit" input.</li>
+									<li>Create an iFrame to https://bootish.genois.tk/ that display the button control.</li>					
+								</ul>
+								<h4>Waiting</h4>
+								<ul>
+									<li>Keep a link with the server with ajax requests</li>
+								</ul>
+								<h4>User action recived</h4>
+								<ul>
+									<li>After validation, the key at "bootish.genois.tk" is signed. Then the native JS from l.js re-activate the form by setting the from action back and remove disabled attribute it added.</li>
+								</ul>
+
+								
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Project</h2>
+									<p>
+										This project is born from a <a href="https://pod.h4ck.me/posts/5408" target="_blank">conversation on Diaspora</a> where we pointed out that the actual offert for "form anti-boot system" isn't that good...
+									</p>
+								</header>
+								
+							
+
+						<!-- Get Started -->
+							<section id="cta" class="main special">
+								<header class="major">
+									<h2>Contact me</h2>
+									<p>Contact me via <a href="https://github.com/dfstorm/">github</a> or by diaspora at dfs@pod.h4ck.me.</p>
+								</header>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+
+						<p class="copyright">&copy; Bootish. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+	</body>
+</html>
