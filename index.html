@@ -50,11 +50,17 @@
 										</header>
 										<p class="content">Simply add this to a form:</p>
 <pre><code class="html">&lt;!-- bootish --&gt;
-&lt;div id="bootish-container"&gt;Loading...&lt;/div&gt;
+&lt;div id="bootish-container"&gt;
+	&lt;noscript style="color:red;"&gt;
+		You must enable JavaScript to be able tu use this form.
+		If you want freedom, privacy and Javascript, take a
+		look at https://www.gnu.org/software/librejs/
+	&lt;/noscript&gt;
+&lt;/div&gt;
 &lt;script&gt;
-var bootishSetup = {
-	sFormAction : '/post.php' // set the form action.
-}
+	var bootishSetup = {
+		sFormAction : '/post.php' // set the form action.
+	}
 &lt;/script&gt;
 &lt;script src="//bootish.genois.tk/l.js"&gt;&lt;/script&gt;
 &lt;!-- bootish / --&gt;</code></pre>
