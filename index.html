@@ -24,15 +24,15 @@
 					<header id="header" class="alt">
 						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span>-->
 						<h1>Bootish</h1>
-						<p>Just another ReCAPTCHA. <a target="_blank" href="https://bootish.genois.tk/exemple/">Demo</a><br />
-						built by <a href="https://twitter.com/GabrielGenois">@GabrielGenois</a>.</p>
+						<p>Just another CAPTCHA. <a target="_blank" href="https://bootish.genois.tk/exemple/">Demo</a><br />
+						by <a href="https://twitter.com/GabrielGenois">@GabrielGenois</a>.</p>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">Installation</a></li>
-							<li><a href="#first">Documentations</a></li>
+							<li><a href="#first">Options</a></li>
 							<li><a href="#second">Project</a></li>
 							<li><a href="#cta">Contact me</a></li>
 						</ul>
@@ -51,35 +51,43 @@
 										<p class="content">Simply add this to a form:</p>
 <pre><code class="html">&lt;!-- bootish --&gt;
 &lt;div id="bootish-container"&gt;Loading...&lt;/div&gt;
+&lt;script&gt;
+var bootishSetup = {
+	sFormAction : '/post.php' // set the form action.
+}
+&lt;/script&gt;
 &lt;script src="//bootish.genois.tk/l.js"&gt;&lt;/script&gt;
 &lt;!-- bootish / --&gt;</code></pre>
+										<p class="content">To acheive a minimum of security, add a dummy form action and set the good one to "sFormAction" parametter</p>
 									</div>
-									
+
 								</div>
 							</section>
 
 						<!-- First Section -->
 							<section id="first" class="main ">
 								<header class="major">
-									<h2>Documentations</h2>
+									<h2>Options</h2>
 								</header>
-								<p class="content">Right now the code isn't open for safety reason. But it will.</p>
-								<h4>Initialisation</h4>
-								<ul>
-									<li>Remove the form Action</li>
-									<li>Add the attribute "disabled" to every "submit" input.</li>
-									<li>Create an iFrame to https://bootish.genois.tk/ that display the button control.</li>					
-								</ul>
-								<h4>Waiting</h4>
-								<ul>
-									<li>Keep a link with the server with ajax requests</li>
-								</ul>
-								<h4>User action recived</h4>
-								<ul>
-									<li>After validation, the key at "bootish.genois.tk" is signed. Then the native JS from l.js re-activate the form by setting the from action back and remove disabled attribute it added.</li>
-								</ul>
 
-								
+
+<pre><code class="html">&lt;!-- bootish Options --&gt;
+&lt;script&gt;
+// Bootish options are optional.
+// Must be placed before the loading script.
+	var bootishSetup = {
+		sFormAction : '',
+		iWidth : 250,
+		iHeight: 40,
+		fncCallback : function() {},
+		fncLoaded : function() {},
+		sLabelWaiting : '',
+		sLabelValidating : '',
+		sLabelError : '',
+		sLabelOkay : ''
+	}
+&lt;/script&gt;
+&lt;!-- bootish --&gt;</code></pre>
 							</section>
 
 						<!-- Second Section -->
@@ -87,11 +95,11 @@
 								<header class="major">
 									<h2>Project</h2>
 									<p>
-										This project is born from a <a href="https://pod.h4ck.me/posts/5408" target="_blank">conversation on Diaspora</a> where we pointed out that the actual offert for "form anti-boot system" isn't that good...
+										This project originated <a href="https://pod.h4ck.me/posts/5408" target="_blank">on Diaspora</a> when a user, "Prep", suggested the idea of a non-proprietary-cloud based, open, and actually easy to use CAPTCHA option; that might be better than Google's ReCAPTCHA (tm).
 									</p>
 								</header>
-								
-							
+
+
 
 						<!-- Get Started -->
 							<section id="cta" class="main special">
@@ -99,14 +107,14 @@
 									<h2>Contact me</h2>
 									<p>Contact me via <a href="https://github.com/dfstorm/">github</a> or by diaspora at dfs@pod.h4ck.me.</p>
 								</header>
-								
+
 							</section>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						
+
 
 						<p class="copyright">&copy; Bootish. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
