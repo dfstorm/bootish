@@ -3,7 +3,7 @@ A small simple cloud powered anti-boot "reCaptcha" that use generic boot restric
 
 ## Bottish server side
 Warning: do not install the bootish server on the same top level domain from where the "client-side" is called.
-https://github.com/dfstorm/bootish
+https://github.com/dfstorm/bootish-server
 
 [Demo](https://bootish.genois.tk/exemple/)
 
