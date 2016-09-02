@@ -1,6 +1,10 @@
 # bootish
 A small simple cloud powered anti-boot "reCaptcha" that use generic boot restrictions to block them.
 
+## Bottish server side
+Warning: do not install the bootish server on the same top level domain from where the "client-side" is called.
+https://github.com/dfstorm/bootish
+
 [Demo](https://bootish.genois.tk/exemple/)
 
 **BETA** - Just for testing for now. there are many improvement to comme. this is just a fast release. I did that in 2 hours... Design to work without jquery. Add it after for the formating with bootstrap.
